@@ -1,0 +1,5 @@
+gradle.buildFinished { buildResult ->
+	def notification = 'display notification "Build Finished" with title "Gradle"'
+	def cmd = ["/usr/bin/osascript", "-e", "$notification"]
+	def proc = cmd.execute()
+}
